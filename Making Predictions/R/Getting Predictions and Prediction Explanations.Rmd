@@ -14,7 +14,7 @@ The main ways you can get predictions out of DataRobot using R would be the mode
 
 **Prediction API**: Any project can be called with the Prediction API if you have prediction servers. This is a simple REST API. Click on a model in the UI, then "Deploy Model" and "Activate now". You'll have access to a R code snippet to help you interact with it. You can also deploy the model through the R API.
 
-For the purposes of this tutorial, we will focus on the Modeling API.
+For the purposes of this tutorial, we will focus on the Modeling API. Note that this particular method of scoring utilizes modeling workers. This means that if someone is using these workers for modeling, your prediction is going to have to wait. This method of scoring is good for testing but not for deployment. For actual deployment, please deploy the model as a REST API through DataRobot's UI or through the API.
 
 ### Requirements
 
